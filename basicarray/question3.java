@@ -10,6 +10,7 @@ public class question3 {
         System.out.println("negative number");
         else
          System.out.println("positive number");
+         System.out.println("jalebi bai");
         
     }
 }
