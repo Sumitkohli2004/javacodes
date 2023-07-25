@@ -68,7 +68,7 @@ class datatype_store<box> {
 
     public box remove() {
         if (last == 0) {
-            System.out.println("the array is empty");
+            System.out.println("this array is empty");
             return null;
         }
         box ls = arr[last - 1];
