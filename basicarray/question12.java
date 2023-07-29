@@ -1,4 +1,4 @@
-package basicarray;
+// package basicarray;
 import java.util.*;
 // find the grater no. between three given no.
 public class question12 {

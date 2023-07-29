@@ -1,4 +1,4 @@
-package basicarray;
+// package basicarray;
 
 public class countpath {
      public static int [][]temp = new int[4][4];

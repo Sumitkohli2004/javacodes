@@ -1,4 +1,4 @@
-package basicarray;
+// package basicarray;
 import java.util.*;
 // print factorial of a number
 public class question15 {

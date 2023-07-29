@@ -1,4 +1,4 @@
-package basicarray;
+// package basicarray;
 // find odd or even no.
 import java.util.*;
 public class question10 {

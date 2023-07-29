@@ -1,4 +1,4 @@
-package basicarray;
+// package basicarray;
 import java.util.*;
 // produce mean and median
 public class question6 {

@@ -1,4 +1,4 @@
-package basicarray;
+// package basicarray;
 import java.util.*;
 public class rotate {
     public static void printmatrix(int[][] b){

@@ -1,4 +1,4 @@
-package basicarray;
+// package basicarray;
 import java.util.*;
 // find area of rectangle
 public class question8 {

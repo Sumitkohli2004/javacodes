@@ -1,4 +1,4 @@
-package basicarray;
+// package basicarray;
 import java.util.*;
 // print table of given number
 public class question14 {

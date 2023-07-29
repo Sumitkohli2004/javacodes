@@ -1,4 +1,4 @@
-package basicarray;
+// package basicarray;
 // check weither a number prime no. or not
 import java.util.*;
 

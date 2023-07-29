@@ -1,4 +1,4 @@
-package basicarray;
+// package basicarray;
 import java.util.*;
 // find the area and circumference of a circle
 public class question7 {

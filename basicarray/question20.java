@@ -1,4 +1,4 @@
-package basicarray;
+// package basicarray;
 import java.util.*;
 // find the sum of digit of a given no.
 public class question20 {

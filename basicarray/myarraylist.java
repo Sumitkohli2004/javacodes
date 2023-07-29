@@ -1,4 +1,4 @@
-package basicarray;
+// package basicarray;
 
 import java.util.*;
 
@@ -20,7 +20,7 @@ class datatype_store<box> {
     public void print() {
         for (box i : arr) {
             if (i != null)
-                System.out.print(i + " ");
+                System.out.print(i + " ");  
         }
         System.out.println();
     }
@@ -40,7 +40,7 @@ class datatype_store<box> {
         if (last == arr.length)
             add_element();
 
-        arr[last] = element;
+        arr[last] = element; 
         last++;
         size++;
     }

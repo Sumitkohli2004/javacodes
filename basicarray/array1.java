@@ -1,4 +1,4 @@
-package basicarray;
+// package basicarray;
 // print no using array and print the sum of given array
 import java.util.*;
 

@@ -1,4 +1,4 @@
-package basicarray;
+// package basicarray;
 // print n element in fibonacci series
 import java.util.Scanner;
 

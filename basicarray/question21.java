@@ -1,4 +1,4 @@
-package basicarray;
+// package basicarray;
 // check weither a year is leap year or not.
 import java.util.Scanner;
 

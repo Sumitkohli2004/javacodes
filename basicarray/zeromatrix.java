@@ -1,4 +1,4 @@
-package basicarray;
+// package basicarray;
 
  class rowcol{
     private int row;

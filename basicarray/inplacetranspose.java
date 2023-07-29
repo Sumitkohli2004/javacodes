@@ -1,4 +1,4 @@
-package basicarray;
+// package basicarray;
 import java.util.*;
 public class inplacetranspose {
     public static void main(String[] args) {

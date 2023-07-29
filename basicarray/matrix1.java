@@ -1,4 +1,4 @@
-package basicarray;
+// package basicarray;
 import java.util.*;
 public class matrix1 {
        public static void main(String[] args) {

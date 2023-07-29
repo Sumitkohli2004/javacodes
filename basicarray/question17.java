@@ -1,4 +1,4 @@
-package basicarray;
+// package basicarray;
 // print prime no. between two given no.
 import java.util.Scanner;
 
