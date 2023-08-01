@@ -14,7 +14,7 @@ class Node {
 class mystack {
 
     Node top;
-    int size;
+    int size=0;
 
     mystack() {
         this.top = null;
@@ -32,8 +32,8 @@ class mystack {
 
     }
 
-    public void push(int element) {
-        Node newnode = new Node(element);
+    public void push(int  data) {
+        Node newnode = new Node(data);
         if (top == null) {
             top = newnode;
             return;

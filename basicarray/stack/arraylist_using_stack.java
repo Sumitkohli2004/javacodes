@@ -5,9 +5,9 @@ import java.util.*;
 class mystack<box> {
 
     int default_cap = 10;
-    int last;
+    int top;
     int size;
-    int top = last;
+    int last = top;
     box arr[];
 
     mystack() {
@@ -54,13 +54,22 @@ class mystack<box> {
 
     public void push(box element) {
         if (arr == null) {
-            System.out.println("stack is null");
+            System.out.println("stack is null - ");
             return;
         }
 
-        top = top + 1;
+        last = last + 1;
+        System.out.println(" " + last);
+
         last++;
         size++;
+
+    }
+
+    public void pop(box element) {
+        if (arr == null)
+            System.out.println("stack is empty - ");
+        return;
 
     }
 
@@ -72,6 +81,9 @@ public class arraylist_using_stack {
         st.push(10);
         st.push(20);
         st.push(30);
+        st.push(40);
+        st.push(50);
+        st.push(60);
         st.print();
         System.out.println("size is - " + st.size);
 
