@@ -24,7 +24,7 @@ class mystack<box> {
     public void print() {
         for (box i : arr) {
             if (i != null)
-                System.out.print(i + " ");
+                System.out.print( " "+i);
         }
         System.out.println();
     }
@@ -52,29 +52,43 @@ class mystack<box> {
 
     }
 
-    public void push(box element) {
-        if (arr == null) {
-            System.out.println("stack is null - ");
-            return;
+     public void push(box element){
+        if(top == arr.length){
+             addBoxs();
+            System.out.println("we are increase array size - ");
+        }
+        arr[top] = element;
+        size++;
+        top++;
+        }
+         
+        public box pop(){
+            Integer x = -1;
+            box res =(box) x;
+            if(top == 0){
+                System.out.println("Array is Empty - ");
+                return res;
+            }
+            res = arr[top-1];
+            arr[top-1] = null;
+            top--;
+            size--;
+            System.out.println("poped element is - "+res);
+            return  res;
         }
 
-        last = last + 1;
-        System.out.println(" " + last);
-
-        last++;
-        size++;
-
-    }
-
-    public void pop(box element) {
-        if (arr == null)
-            System.out.println("stack is empty - ");
-        return;
-
-    }
-
+          public int peek(){
+             if(top == 0){
+                System.out.println("Array is Empty - ");
+                return -1;
+            }
+            box ret = arr[top-1];
+            top++;
+            size++;
+            System.out.println("peeked element is - "+ret);
+            return (int)ret;
+        }
 }
-
 public class arraylist_using_stack {
     public static void main(String[] args) {
         mystack<Integer> st = new mystack<>();
@@ -86,6 +100,15 @@ public class arraylist_using_stack {
         st.push(60);
         st.print();
         System.out.println("size is - " + st.size);
+
+        //  st.pop();
+        // System.out.println("size  after pop is - " + st.size);
+
+        st.peek();
+        System.out.println("size  after peeek  is - " + st.size);
+
+       
+
 
     }
 }
