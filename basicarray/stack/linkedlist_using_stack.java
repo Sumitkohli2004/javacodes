@@ -14,11 +14,11 @@ class Node {
 class mystack {
 
     Node top;
-    int size=0;
+    int size;
 
     mystack() {
         this.top = null;
-
+        size=0;
     }
 
     public void print() {
@@ -33,6 +33,7 @@ class mystack {
     }
 
     public void push(int  data) {
+        try{
         Node newnode = new Node(data);
         if (top == null) {
             top = newnode;
@@ -41,7 +42,9 @@ class mystack {
         newnode.next = top;
         top = newnode;
         size++;
-
+    }catch(Exception e){
+        e.printStackTrace();
+    }
     }
 
     public int pop() {
@@ -60,20 +63,27 @@ class mystack {
 
     }
 
-}
+    public boolean isEmpty(){
+            return size == 0;
+        }  
+   
+    }
+
+
+
 
 public class linkedlist_using_stack {
     public static void main(String[] args) {
         mystack st = new mystack();
         st.push(10);
         st.push(20);
-        st.push(30);
-        st.push(40);
-        st.push(50);
-        st.push(60);
-        st.push(70);
+        // st.push(30);
+        // st.push(40);
+        // st.push(50);
+        // st.push(60);
+        // st.push(70);
         st.print();
-        System.out.println("size is - " + st.size);
+        System.out.println("size is - " + st.isEmpty());
         // st.pop();
         // System.out.println("size after pop - " + st.size);
 
